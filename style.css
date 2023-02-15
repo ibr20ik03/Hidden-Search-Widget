@@ -1,0 +1,77 @@
+/* Main Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+ }
+
+/* Style Search */
+
+.search {
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 2px solid #dddddd;
+}
+
+.search input {
+    height: 100%;
+    width: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    transition: all 0.3s linear;
+    caret-color: #5677fc;
+}
+
+.search button {
+    height: 100%;
+    width: 50px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #5677fc;
+}
+
+.result-search {
+    width: 354px;
+    border: 2px solid #dddddd;
+    border-top: none;
+    border-bottom-color: #5677fc;
+    margin-top: -2px;
+    z-index: 3;
+    background: #fff;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: none;
+}
+
+.result-search > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 5px 10px 10px 20px;
+    flex: 1;
+}
+
+.result-search > ul > li {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-search > ul > li:hover {
+    color: #5677fc;
+}
